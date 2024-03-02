@@ -9,14 +9,14 @@ import java.net.http.HttpResponse;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-public class ReaderURL {
+public class WriterUrl {
 
-    public static void saveUrlToFile(String filename, String resourcesPath, String urlForReading) throws Exception {
+    public static void saveUrlToFile(String filename, String resourcesPath, String urlForWrite) throws Exception {
 
         HttpClient httpClient = HttpClient.newBuilder().build();
 
         HttpRequest httpRequest =
-                HttpRequest.newBuilder(new URI(urlForReading))
+                HttpRequest.newBuilder(new URI(urlForWrite))
                         .GET()
                         .build();
 

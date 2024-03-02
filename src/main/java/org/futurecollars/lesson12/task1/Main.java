@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
 
-        ReaderURL.saveUrlToFile("dataUrl2", "src/main/resources", "https://guitarcenter.pl/catalog/");
+        WriterUrl.saveUrlToFile("dataUrl2", "src/main/resources", "https://guitarcenter.pl/catalog/");
 
     }
 }
