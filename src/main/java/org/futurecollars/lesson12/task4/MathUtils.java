@@ -14,14 +14,14 @@ public class MathUtils {
                     .mapToInt(Integer::intValue)
                     .average()
                     .orElse(Double.NaN);
-            System.out.println("Average" + average);
+            System.out.println("Average: " + average);
         };
 
         Runnable secondTask = () -> {
             double sum = numbers.stream()
                     .mapToInt(Integer::intValue)
                     .sum();
-            System.out.println("Sum" + sum);
+            System.out.println("Sum: " + sum);
         };
 
         Thread firstThread = new Thread(firstTask);
