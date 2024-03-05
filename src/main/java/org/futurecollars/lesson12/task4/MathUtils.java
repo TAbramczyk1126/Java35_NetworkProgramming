@@ -27,6 +27,5 @@ public class MathUtils {
 
         firstThread.start();
         secondThread.start();
-
     }
 }
